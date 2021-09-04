@@ -2,3 +2,5 @@ Test Method
 Automation
 
 Java Automation
+
+Git is also covered

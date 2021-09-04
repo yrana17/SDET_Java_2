@@ -1,0 +1,651 @@
+############################################################################################################
+#07-Aug-2021
+############################################################################################################
+#Intro to Java
+#Java Features
+#JDK vs JRE vs JVM
+#Packages
+#Class and Object
+#Basic CLass Structure of Java
+#public static void main
+#Primitive Data Types- boolean,short,int,long,float,decimal,char, byte
+#Local Variable vs Instance Variable vs Static Variable
+#Concatenation Operator
+############################################################################################################
+
+
+Java Intro:
+High Level Languages  
+a programmer friendly language
+easy to debug
+compiler n interpreter
+
+Features:
+Simple n easy to use
+Robust - run time error handling is easy
+Platform independent
+portability - machine independent
+Object oriented
+Secure  - bcoz there is individual runtime env
+Multi threading that support parallel & faster execution  
+
+
+JDK : Java Development Kit   :Env(JRE), interpreter,compiler,jar
+JRE : Env to execute our developed program
+JVM : responsible for executing the program line by line an hence its an interpreter
+
+JVM Java Virtual mc   ==> executing program line by line -- interpreter
+JDK Java development kit ==> development  = writing code  = needing libraries + code syntax  + compiler
+JRE Java Runtime Env ==> Execution === code execution
+
+Class   ->  test.java
+Compiler  javac   -> test.class
+
+Packages : mechanism to group classes, sub packages, interfaces.
+Example,  Music Packages   ->  SUb Packages like Hindi, English,ect -> Audio.mp3,  video files
+
+Class : Template or blueprint from which objects are created
+
+Objects : class features and behavior
+
+System.out.Println -> Write in new line
+System.out.Print  ->  Write in same line
+
+syso is shortcut for System.out.Println
+CTRL + SHIFT +F  ->  INDENTATION
+CTRL + F11 -> Execute Program
+Ctrl + SPace  -> for listing the options
+
+SIngle Line COmment ->  //
+Multi Line Comment -> /** and Press ENter
+
++ is a concatenation operator
+
+Variables:
+1.Instance Variable is one which is defined inside class and can be access by any method inside class given
+For accessing inside static methods, create class object and then access its
+For accessing inside non static methods, directly use it.
+
+2.Local Variable is one which is define inside specific method and cant be access outside same method.
+
+3.static Variable can be accessed inside static and non static methids diretcly.
+
+############################################################################################################
+############################################################################################################
+
+
+############################################################################################################
+#08-Aug-2021
+############################################################################################################
+#Methods
+#Return Statement
+#Static Method & Variable
+#Arithmetic Operators
+#Unary Operators
+#Logical Operators
+#Relational Operators
+#Ternary Operators
+#n+=1 vs n=+1
+#Access Modifier
+############################################################################################################
+
+Methods are just for modularising the featutres and to increase reusability and avoid repetitiveness
+
+AccessModifier Return-Type Method-Name (  Parameters list)
+Example,
+public void displayInvoiceDetails(int invNo,int itemNo,int qty, float disc, double totAmt, String comment)
+{
+}
+
+Static means class reference and we do not need to create object of class to use that method or variable.
+CLASS_NAME.METHOD_NAME
+CLASS_NAME.VARIABLE_NAME
+
+
+Aithmetic Operators:  +,-,*,/,%
+
+Write a program to swap two numbers?
+Write a program for finding whether no is Armstrong no?
+153 = 1*1*1 + 5*5*5 + 3*3*3
+create method where you should be able to find it as armstrong or not and return it as true or false
+
+
+Relational Operator:  <, >, <= , >=, ==,  !=
+
+Comment COde:  CTRL + SHIFT + /
+Uncomment COde: CTRL + SHIFT + \
+
+Logical Operator: AND, OR , NOT
+
+Unary Operators: - , pre increament , post increment, pre decrement, post decrement
+Pre Increment : FIrstly increment the value and then use it.
+Post Increment : First use the value and then increment it.
+
+
+
+n=+1  mean n is asigned value of +1
+n+=1  means n value is incremented by no on right hand side; n= n + 1
+
+
+Access Modifiers:
+Public : It can be used from any class within and outside package in which it is defined.
+Private: It can only be used in same class in which it is defined.
+Protected: It can be used within same package in which it is defined only.
+  It is also visible in subclass.(to be discuss at time of inheritance)
+Default: It can be used within same package in which it is defined only.
+
+
+############################################################################################################
+############################################################################################################
+############################################################################################################
+#14-Aug-2021
+############################################################################################################
+#Constructors
+#THIS keyword
+#Conditional Statments - If, Else, ElseIF,Switch Case, Break
+#Loops - While, Do While, For, Infinite Loop, Nested Loops
+#Break & Continue
+############################################################################################################
+
+Constructor is a like method but not a method and having same name as class and used to initialise objects.
+
+Default Constructor - no parameters
+Parametrized Constructor - parameters
+
+Case: There is a product and you have to diplay Name, Qty, Price using COnstructor initialise them and write functions for same.
+
+this keyword refers to current object. Class Level Attributes especially when we have ambuiguiyty in variable names.
+
+
+Find Largest no out of 3 nos - n1= -1.0, n2=4.5, n3=-5.3   using if else?
+Find if my character is vowel or consonants using Switch Case?
+Calculate no of days in particular month using Switch Case?
+
+Loops are for iterations
+
+While loop first check if condition is satisfied then only executed inside statements and as sooon as condition failed 
+it comes out of loop.
+
+Do while says first execute statement inside loop and then check condition.
+
+For Loop:  for(int i=1; i <=10;  i++)
+Initialisation ;  conditions check  ; increment and decrement
+
+WAP to print your name 5 times?
+WAP to print sum of natutral number from 1 to 100 using for loop?
+
+Break Statement is to break out of current loop.
+Continue Statement is to skip current iteration in ongoing loop.
+
+WAP to print fibonnaci series for first 10 numbers? 
+0, 1, 0+1=2,   2+1=3, 3+2 =5, 8,13,21,34,55,......
+
+Double FOr Loop:
+	i=10   ;  j =1,2,3,4,5....10
+	i=11   ;  j =1,2,3,4,5,...10
+
+WAP using nested loop.
+1
+12
+123
+1234
+12345
+
+WAP for below pattern.
+0
+12
+345
+6789
+
+
+WAP for below patterns.
+1 2 3 4 5 6 7
+2 3 4 5 6 7 1
+3 4 5 6 7 1 2
+4 5 6 7 1 2 3
+.
+.
+7 1 2 3 4 5 6
+
+
+
+############################################################################################################
+############################################################################################################
+############################################################################################################
+############################################################################################################
+#15-Aug-2021
+############################################################################################################
+#Arrays - Single and MultiDimensions Arrays
+#OOPS- Encapsulation, Inheritance, Polymorphism, Abstraction-Interface and Abstract CLass
+#Super Keyword
+#Static Keyword
+############################################################################################################
+Arrays is collection fo data of same type in sequencial order.
+array.length is to get size of array.
+array index starts from 0.
+
+WAP to declare & initialise array and find sum and average of no in arrays?
+
+WAP to declare 3,5 arrays and assign dynamic no of values to it and then iterate over it to print it in proper form
+of array matrix?
+
+	c=0	c=1	c=2	c=3	c=4
+r=0	0,0=13	0,1=15	7	11	3
+r=1	11	26	34		
+r=2	10	15	7		
+r=3	11	26	34	8	
+
+WAP to transpose 2D Arrays?
+
+Encapsulation is wrapping of data into single unit.
+Encapsulation is a way of Data Hiding.
+
+Generate Getter Setters :  Right CLick > Source > Generate Getter/Setter
+
+
+Inheritance is a mechanism in which one object can acquire or inherit Parent Class properties.
+
+Single Level is when a class inherit another class.
+Multilevel is when there is chain of inhertance.
+Hierarchial is when multiple classes inherit single class
+Multiple Level inheritance is not possible at class level due to ambuiguity.
+
+
+Polymorphism is more than one form.
+1.Method Overloading
+If class has multiple methods of same name but different parameters.
+
+Can we overload main method in Java?
+
+2.Method Overriding
+When we inherit Parent Class into Child Class and both have same method name and parameter
+then its called as method overriding.
+
+
+Abstraction
+it is the process of data hiding - Hiding Implementation details and revealing only basic necessary functionality.
+
+1.Abstract Class
+COntains both Abstract and Non Abstract Method
+Does not support Multiple Inheritance.
+Can have Final, Non-Final, Static and Non-Static Variable.
+Can provide implementations of Interface.
+Abstarct keyword.
+can extends another java class and implements multiple Interfaces.
+
+
+2.Interface
+It is a blueprint of Class.
+COnatins  Abstract,Static and Default Method.
+Support Multiple Inheritance.
+Can have Final, Static Variable.
+Cannot provide implementations of Abstract Class.
+Interface keyword.
+can extends  Interface.
+Members are by default public.
+
+
+Abstract Methods are thosa that does not contain any definition of method & is defined in class to be used.
+Non-Asbtract Methods are normal methods.
+
+Example of Abstraction-
+Bank -> Rate Of Interests  (Abstract CLass)
+abstract int getRateOfInterest();
+
+SBI, ICICIC, HDFC
+SBI
+int getRateOfInterest() { return 7.5;   }
+ICICIC
+int getRateOfInterest() { return 8.2;   }
+HDFC
+int getRateOfInterest() { return 5.5;   }
+
+implements keyword to use Interface in Class.
+
+
+Multiple Interface can be achieved using Interface? Yes
+Class A implements I1,I2
+
+One Interface can extends another Interface
+Interface1 extends Interface2
+
+WIth Java8 default methods and Static Methods are allowed in Interface,
+
+
+Super Keyword is used to refer immediate parent class object.
+
+
+Static method can't be overriden because then it refers through class name only and
+there is no object creation hence no ambuiguity.
+
+############################################################################################################
+############################################################################################################
+#21-Aug-2021
+############################################################################################################
+#String Handling - Literals, String Buffer, Builder
+#Equals vs == in STring
+#Wrapper Class
+#Type Conversion & Casting
+#Exception Handling
+#Try, Catch, Throw, Throws, Custom Exception, Finally
+#Final Keyword
+############################################################################################################
+
+String is a array of characters.
+It is immutable - cant be changed.
+Example,
+str.concat(" in cricket");
+System.out.println(str);
+		
+str=str.concat(" in cricket");
+System.out.println(str);
+
+
+
+Can be created in 2 ways.
+String str1="Test";    //STring Literal
+String str=new String("Test"); //STring Object
+
+Exception in thread "main" java.lang.StringIndexOutOfBoundsException:
+
+charAT
+concat
+IndexOF
+lastIndexOf
+Equals
+EqualsIgnoreCase
+tolowerCase
+toUpperCase
+Trim
+contains
+replace
+replaceall
+split
+
+
+WAP to find the full fileName and its extensions using String Handling.
+C:\Users\USERID\Desktop\DevLab Training\TEST.xlsx
+TEST
+.xlsx
+xlsx
+
+WAP to print all the substring that starts and ends with 1.
+100110110010101100001
+
+1001
+10011
+1001101
+.
+.
+.
+.
+Hint: Length, charAT, subString, for loop
+
+
+String Buffer is synchronized while String Builder is non synchronized.
+String Buffer is thread safe it means concurrecy is maintained.
+
+
+String pool : its nothing but storage in java heap memory to store string literals.
+
+
+Wrapper Class is to convert Primitive Data Type to Object
+
+char /  Character
+
+WAP to fetch Numeric Values from STring.
+Testing123.456isworld123having985.235fun
+123.456
+123
+985.235
+
+
+Data Type COnversions
+
+String to Other Data Types =>
+Integer.parseInt("12345")
+Boolean.parseBoolean
+Long.parseLong
+Float.parseFloat
+Double.parseDouble
+
+
+Other Data Types to String =>
+String.valueOf(numOfOtherDataType)
+
+
+Exception in thread "main" java.lang.NumberFormatException: For input string: "12345ABD"
+
+
+Type Casting
+It comes when When we want to Convert Higher Data Type to Lower One
+double d=10.5d;
+int i = (int) d;
+System.out.println(i);
+		
+Type Conversion
+It comes automatically for Lower to Higher Data Type
+
+
+
+Equals vs ==
+
+COntent Comparison vs Refrence Comparison
+== is operatror n used for memory address comparison
+equals is method which looks for the content.
+
+
+
+
+Exception Handling 
+
+Any event that impact our execution whether before or during.
+1.CHecked Exception: Compile Time
+IOException
+FileNotFoundException
+CLassNotFoundException
+
+
+
+2.UnCHecked Exception: Run Time where programmer is reason behind it as he has not handled same
+ArithmeticException
+NullPointerException
+ArrayIndexOutOfBound
+NumberFOrmatException
+
+Try Catch Block to Handle the Exceptions so that we dont have to terminate our program.
+One Try can have multiple catch block.
+Without catch or finally, try is not possible.
+Excepotion is the Parent of all the execptions possible.
+
+Finally Block:
+It is always executed whether try block step encounter exception or not.
+Example, Releasing of resources like closing recordset, connections,etc
+
+
+Throws Keyword: 
+1.It is required only for Checked Exception
+2.It is required to convince compiler and its usage does not prevent abnormal termination of program.
+3.By the help of Throws keyword, we can provide info to the caller of function about the exception.
+4.Its always present in Method Signtaure.
+
+Throw Keyword:
+1.It is used to explicityly throw the exception from a method.
+2.Its possible for checked as well as Unchecked exception.
+3.Basically for custom exception.
+
+Custom Exceptions can be created by extending Exception Class.
+
+Final Keyword:
+1.Final Class cannot be Inherited
+2.Final Variable value cannot be changed.
+3.FInal Method cannot be override.
+
+############################################################################################################
+############################################################################################################
+#22-Aug-2021
+############################################################################################################
+#Scanner CLass
+#Collections Class
+#Map: HashMap, Linked HashMap, TreeMap, HashTable
+#List: ArrayList, LinkedList, Vector
+#Set: TreeSet, HashSet, LinkedHashSet
+#For Each Loop
+############################################################################################################
+
+For Each Loop is used to get single single elements from Group Of ELements.
+
+For (DataType Elem :  GroupOfData)
+	syso(Elem);
+
+
+Scanner Class 
+It is used to get user Input.
+
+nextInt() method that reads a int value from the user
+nextLine() method that reads a String value from the user
+nextLong()
+nextDouble()
+
+
+
+WAP to find highest number out of integer array using for each loop.
+
+
+Collection Framework
+
+List -> It let us add duplicates and null values.
+Linked List is preferred when we want to manipulate the data
+while ArrayList is preferred when we justs want to store data.
+Vector is same as ArrayList except it is synchronized.
+
+Add 
+Remove
+Contains
+
+How to Iterate?
+lst.size for length
+lst.get(idx) for reading data
+lst.sublist(idx, length)
+lst.isEmpty()
+
+WAP to get dynamic list and there is a search button on frotend that can at max take 5 input
+tp search for data. Write program to handle same.
+
+		List<String> lst = new ArrayList<String>();
+		lst.add("ABC");
+		lst.add("BCD");
+		lst.add("AAA");
+		lst.add("BCD");
+		lst.add(null);
+		lst.add("BCE");
+		lst.add("BCF");
+		
+		for (int i = 0; i < lst.size(); i+=5) {
+			System.out.println(i);
+			System.out.println(Math.min(lst.size(), i+5));
+			List<String> l = lst.subList(i, Math.min(lst.size(), i+5));
+			System.out.println(l);
+		}
+
+
+Set is another collection interface that does not allow duplicates.
+
+HashSet -> It maintain random order. it allows null.
+LinkedHashSet -> It maintain insertion order. It allows null.
+TreeSet -> It maintain sorting order. It does not allow null element.
+
+
+
+Iterators:
+They are used in collection framework in order to retrieve the elements one by one.
+It always move in forward direction.
+Traverse map, list, set.
+
+List Iterator:
+Move in Forward and backward directions.
+Can be used to add more elements.
+only traverse list.
+
+
+
+Map
+It works on Key Value pair.
+Key has to be unique.
+Example, Name=Test Salary=55 Address=123 KA
+
+Put Method to add value
+Get Method to get particular Key Value
+ContainsKey to check if your map contains required key.
+KeySet will give you set of keys.
+
+HashMap: Random Order of Values. Allow null key and values.
+LinkedHashMap: Insertion Order of key is maintained and allow null key as well as values.
+TreeMap:Sorting order Maintained and does not allow null key while null value is permitted.
+HashTable: Same as HashMap except its synchronized. No Null key or value is allowed.
+
+
+WAP to create list, set and map and traverse through them.
+
+WAP to print the occurence of each character in String using Map.
+TestingisWorld
+
+
+Collection vs COllections
+Collections is a class.
+Sort
+addall
+copy
+reverse
+
+
+############################################################################################################
+############################################################################################################
+############################################################################################################
+#04-Sept-2021
+############################################################################################################
+#File Handling
+#Git Commands
+############################################################################################################
+
+Stream is actually a method to sequentially access data.
+IO Stream 
+java.io is pakage for IO stream.
+
+
+Reader/Writer     : character
+Input/OutputStream : byte
+
+
+Character stream
+It used unicode conventions(hexadecimal convention).
+it does help in reading file chARACTER by character
+text
+
+Byte Stream
+It basically processes data byte by byte
+binary file
+
+You have click on download button on UI and file is downloaded in downloads folder.
+WAP to read that latest download file.
+
+1.Users/Downloads
+2.List all Files present there and filter them by extension
+3.Get their modified date and recent one will be our output file
+
+
+Buffered Reader
+It is subclass of reader and used to read data from reader. It is more faster as it incoporate Cache memory 
+to read data instead of going to hard disk for same. It provides readline method to read data line by line
+instead of going character by character.
+
+WAP to read data from csv file using Buffered Reader and store it into some collection.
+HashMap<Integer,HashMap<String,String>>
+
+Name,CLass,Id,Salary,Dept
+Test1,Class1,Id1,Sal1,Dept1
+Test2,CLass2,Id2,Sal2,Dept2
+
+############################################################################################################
+
+############################################################################################################

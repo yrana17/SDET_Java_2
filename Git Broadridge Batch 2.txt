@@ -1,0 +1,192 @@
+Git Commands
+
+Git is a version control system that let u manage your source code
+
+GitHub is cloud based web hosting service to store & Manage repositories.
+
+1.Configuring UserName & Email
+YOGESH RANA@LAPTOP-T8V1FV5L MINGW64 ~/Desktop
+$ git config --global user.name
+YRANA
+
+YOGESH RANA@LAPTOP-T8V1FV5L MINGW64 ~/Desktop
+$ git config --global user.email
+rana05.akki@gmail.com
+
+YOGESH RANA@LAPTOP-T8V1FV5L MINGW64 ~/Desktop
+$ git config --global user.name "YRANA17"
+
+
+
+2.Create New Repository & Clone into your local
+
+Go to GitHub
+Create New Empty Repository
+Copy Git repository Url
+
+YOGESH RANA@LAPTOP-T8V1FV5L MINGW64 ~/Desktop
+$ git init
+Initialized empty Git repository in C:/Users/YOGESH RANA/Desktop/.git/
+
+YOGESH RANA@LAPTOP-T8V1FV5L MINGW64 ~/Desktop (master)
+$ git clone https://github.com/yrana17/SDET_Java_2.git
+Cloning into 'SDET_Java_2'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+3.Git Branching & Checkouts
+
+YOGESH RANA@LAPTOP-T8V1FV5L MINGW64 ~/Desktop/SDET_Java_2 (main)
+$ git branch
+* main
+
+YOGESH RANA@LAPTOP-T8V1FV5L MINGW64 ~/Desktop/SDET_Java_2 (main)
+$ git branch development
+
+YOGESH RANA@LAPTOP-T8V1FV5L MINGW64 ~/Desktop/SDET_Java_2 (main)
+$ git branch
+  development
+* main
+
+YOGESH RANA@LAPTOP-T8V1FV5L MINGW64 ~/Desktop/SDET_Java_2 (main)
+$ git checkout development
+Switched to branch 'development'
+
+YOGESH RANA@LAPTOP-T8V1FV5L MINGW64 ~/Desktop/SDET_Java_2 (development)
+$ git branch
+* development
+  main
+
+
+JIRA_Project_V1.0
+
+Main   >  master_v1.0  >  story-v1.0-55
+		        >  story-v1.0-57
+			>  story-v1.0-58	
+
+
+JIRA_Project_V1.1
+	  >  master_v1.1> story-v1.1-50
+		        >  story-v1.1-51
+			>  story-v1.1-59	
+
+
+
+
+4.Git Code Pull & Push
+
+YOGESH RANA@LAPTOP-T8V1FV5L MINGW64 ~/Desktop/SDET_Java_2 (development)
+$ git status
+On branch development
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .classpath
+        .project
+        .settings/
+        Test.txt
+        Test_csv.csv
+        bin/
+        src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+YOGESH RANA@LAPTOP-T8V1FV5L MINGW64 ~/Desktop/SDET_Java_2 (development)
+$ git add .
+warning: LF will be replaced by CRLF in Test.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in bin/.gitignore.
+The file will have its original line endings in your working directory
+
+
+YOGESH RANA@LAPTOP-T8V1FV5L MINGW64 ~/Desktop/SDET_Java_2 (development)
+$ git commit -m "initial code commit for java learning done"
+
+
+YOGESH RANA@LAPTOP-T8V1FV5L MINGW64 ~/Desktop/SDET_Java_2 (development)
+$ git push origin development
+Enumerating objects: 104, done.
+Counting objects: 100% (104/104), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (100/100), done.
+Writing objects: 100% (103/103), 23.93 KiB | 245.00 KiB/s, done.
+Total 103 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+remote:
+remote: Create a pull request for 'development' on GitHub by visiting:
+remote:      https://github.com/yrana17/SDET_Java_2/pull/new/development
+remote:
+To https://github.com/yrana17/SDET_Java_2.git
+ * [new branch]      development -> development
+
+
+
+YOGESH RANA@LAPTOP-T8V1FV5L MINGW64 ~/Desktop/SDET_Java_2 (development)
+$ git pull origin development
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 7.60 KiB | 59.00 KiB/s, done.
+From https://github.com/yrana17/SDET_Java_2
+ * branch            development -> FETCH_HEAD
+   cfbbbb3..c1f6e04  development -> origin/development
+Updating cfbbbb3..c1f6e04
+Fast-forward
+ Java SDET- Broadridge Batch 2.txt | 651 ++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 651 insertions(+)
+ create mode 100644 Java SDET- Broadridge Batch 2.txt
+
+
+5.Git log command to check git commit history
+
+YOGESH RANA@LAPTOP-T8V1FV5L MINGW64 ~/Desktop/SDET_Java_2 (development)
+$ git log
+commit c1f6e04dbdb1468da99ae52712ef3b5a200839d4 (HEAD -> development, origin/development)
+Author: Yogesh Rana <36674300+yrana17@users.noreply.github.com>
+Date:   Sat Sep 4 12:40:29 2021 +0530
+
+    Add files via upload
+
+    Added Java Notes Text File
+
+commit cfbbbb3ca1b06850aa636456757a54d22dbcd5ee
+Author: YRANA <rana05.akki@gmail.com>
+Date:   Sat Sep 4 12:37:42 2021 +0530
+
+    modified test.txt file with some more info
+
+commit 227c45033cfc294f27b1cf42750d86df2ea78ef3
+Author: YRANA <rana05.akki@gmail.com>
+Date:   Sat Sep 4 12:35:23 2021 +0530
+
+    initial code commit for java learning done
+
+commit 8f726691073a4461d3ee170496cb3258f981baf5 (origin/main, origin/HEAD, main)
+Author: Yogesh Rana <36674300+yrana17@users.noreply.github.com>
+Date:   Sat Sep 4 11:50:52 2021 +0530
+
+    Initial commit
+
+YOGESH RANA@LAPTOP-T8V1FV5L MINGW64 ~/Desktop/SDET_Java_2 (development)
+$ git log -1 development
+commit c1f6e04dbdb1468da99ae52712ef3b5a200839d4 (HEAD -> development, origin/development)
+Author: Yogesh Rana <36674300+yrana17@users.noreply.github.com>
+Date:   Sat Sep 4 12:40:29 2021 +0530
+
+    Add files via upload
+
+    Added Java Notes Text File
+
+
+6.Create Pull Request and Merge
+
+Go to branch which you want to merge into main branch
+Create pull request
+make sure of the source and target branch
+submit
+go to pull request section
+new creation will be present there, just click on it and merge and confirm.
+
